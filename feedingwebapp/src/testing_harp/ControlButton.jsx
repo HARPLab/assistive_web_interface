@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export default function ControlButton({ direction, onPress, onRelease, children, className, ariaLabel }) {
   return (
@@ -12,5 +12,5 @@ export default function ControlButton({ direction, onPress, onRelease, children,
     >
       {children}
     </button>
-  );
+  )
 }

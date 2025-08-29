@@ -1,0 +1,100 @@
+/* survey container */
+.survey-container {
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -40%); 
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  z-index: 2000; 
+  text-align: center;
+  max-width: 600px;
+  width: 90%; 
+  font-family: 'Inter', sans-serif; 
+  color: #333;
+
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+/* question heading */
+.survey-container h3 {
+  margin-bottom: 25px;
+  font-size: 1.2em;
+  color: #2c3e50;
+}
+
+/* scale options layout */
+.scale-buttons {
+  display: flex;
+  justify-content: space-around; 
+  margin-bottom: 25px;
+  gap: 10px; 
+}
+
+.scale-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px; 
+}
+
+/* individual scale button */
+.scale-button {
+  width: 50px; 
+  height: 50px;
+  border: 2px solid #007bff;
+  border-radius: 50%; 
+  background-color: white;
+  color: #007bff;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scale-button:hover {
+  background-color: #e6f2ff; 
+  transform: translateY(-2px); 
+}
+
+.scale-button.selected {
+  background-color: #007bff; 
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* scale labels (like agree, strongly agree*/
+.scale-label {
+  font-size: 0.8em;
+  color: #555;
+  width: 80px; 
+  text-align: center;
+}
+
+/* submit button */
+.submit-button {
+  background-color: #28a745; 
+  color: white;
+  padding: 12px 50px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.7em;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+  margin-top: 20px;
+  
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-button:hover {
+  background-color: #218838; 
+}

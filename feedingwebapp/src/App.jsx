@@ -20,13 +20,14 @@ import BiteSelectionButtonOverlay from './Pages/Home/BiteSelectionUIStates/BiteS
 import BiteSelectionName from './Pages/Home/BiteSelectionUIStates/BiteSelectionName'
 import BiteSelectionPointMask from './Pages/Home/BiteSelectionUIStates/BiteSelectionPointMask'
 import RobotVideoStreams from './robot/RobotVideoStreams'
+import ROSButtons from './testing_harp/main_button_page'
 
 /**
  * Determines what screen to render based on the app page specified in global
  * state.
  *
  * @param {APP_PAGE} appPage - The current app page. Must be one of the
- *        states specified in APP_PAGE.
+ * states specified in APP_PAGE.
  * @param {string} rosbridgeURL - The URL of the rosbridge server.
  * @param {bool} debug - Whether to run it in debug mode or not.
  */
@@ -90,6 +91,19 @@ function App() {
             element={
               <RosConnection url={rosbridgeURL} autoConnect>
                 <RobotVideoStreams webrtcURL={webrtcURL} />
+              </RosConnection>
+            }
+          />
+          {/* i remember there was an issue in my ability to commit to github */}
+          {/* i dont think we ever fixed it */}
+          {/* so yes the testing_harp pages are uploaded */}
+          {/* you have to create a route to those pages in app.jsx */}
+          <Route
+            exact
+            path='/testing_harp'
+            element={
+              <RosConnection url={rosbridgeURL} autoConnect>
+                <ROSButtons />
               </RosConnection>
             }
           />
