@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react'
 import { useROS, createROSTopic, createROSMessage } from '../ros/ros_helpers.js'
 import TestROS from '../ros/TestROS'
 
+// TO IGNORE FORMATTING ERRORS, RUN: npx prettier --write "src/testing_harp/SoA_Survey.jsx" "src/testing_harp/ControlButton.jsx" "src/testing_harp/main_button_page.jsx"
 export default function SamyuktaTests() {
   const topicRef = useRef(null)
   const [isHeld, setIsHeld] = useState(false)

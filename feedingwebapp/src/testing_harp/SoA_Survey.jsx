@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './SoA_Survey.css'
-import PropTypes from 'prop-types' // 
+import PropTypes from 'prop-types' //
 
 export default function Survey({ onSurveyComplete }) {
   const [selectedAnswer, setSelectedAnswer] = useState(null)
